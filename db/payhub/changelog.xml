@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet author="pagopa" id="init debt-positions schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0001-pa-ddl-create_schema_debt_positions.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0002-pa-ddl-create_table_debt_position_type.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0003-pa-ddl-create_table_spontaneous_form.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0004-pa-ddl-create_table_debt_position_type_org.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0005-pa-ddl-create_table_debt_position_type_org_operators.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0006-pa-ddl-create_table_debt_position.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0007-pa-ddl-create_table_payment_option.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0008-pa-ddl-create_table_receipt.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0009-pa-ddl-create_table_installment.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0010-pa-ddl-create_table_transfer.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0011-pa-ddl-create_table_iuv_sequence_number.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init classification schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0001-pa-ddl-create_schema_classification.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0002-pa-ddl-create_table_payments_reporting.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0003-pa-ddl-create_table_treasury.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0004-pa-ddl-create_table_classification.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0005-pa-ddl-create_table_payment_notification.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0006-pa-ddl-create_table_assessment.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0007-pa-ddl-create_table_assessments_detail.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/classification/0008-pa-ddl-create_table_assessments_registry.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init organizations schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0001-pa-ddl-create_schema_organizations.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0002-pa-ddl-create_table_organization.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0003-pa-ddl-create_table_broker.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0004-pa-ddl-create_table_taxonomy.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0005-pa-ddl-create_table_org_sil_service.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0006_pa_ddl_create_table_broker_configuration.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0007-pa-ddl-create_table_station.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0008-pa-ddl-create_table_organization_station.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init process-executions schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/process_executions/0001-pa-ddl-create_schema_process_executions.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/process_executions/0002-pa-ddl-create_table_ingestion_flow_file.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/process_executions/0003-pa-ddl-create_table_export_file.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init workflow_hub schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/workflow_hub/0001-pa-ddl-create_schema_workflow_hub.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/workflow_hub/0002-pa-ddl-create_table_workflow_type.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/workflow_hub/0003-pa-ddl-create_table_workflow_type_org.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/workflow_hub/0004-pa-ddl-create_table_debt_position_workflow_type.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init migration schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/migration/0001-pa-ddl-create_schema_migration.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/migration/0002-pa-ddl-create_table_uploads.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/migration/0003-pa-ddl-create_table_upload_details.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/migration/0004-pa-ddl-create_table_debt_position_type_org_operators.sql"
+        />
+    </changeSet>
+
+</databaseChangeLog>

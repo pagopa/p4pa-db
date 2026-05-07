@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet author="pagopa" id="init aux schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/aux_/001-create_schema.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/aux_/002-create_table_dim_date.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/aux_/003-create_table_dim_debt_position_type_org.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/aux_/004-insert_dim_date_2020_2030.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/aux_/005-create_table_dim_organization.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init cfg schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/cfg/001-create_schema.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/cfg/002-create_table_flow_status.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init raw schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/raw/001-create_schema.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/raw/002-create_table_assessments_classification.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/raw/003-create_table_debt_position_type_orgs.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/raw/004-create_table_auth.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/raw/005-create_table_export_file.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/raw/006-create_table_ingestion.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init stg schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/stg/001-create_schema.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/stg/002-create_table_payment_assessment_detail.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/stg/003-create_table_debt_position_type_orgs.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/stg/004-create_table_payment_assessment_detail_tmp.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/stg/005-create_table_auth.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/stg/006-create_table_export_file.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/stg/007-create_table_ingestion.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init dwh schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dwh/001-create_schema.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dwh/002-create_table_dim_office.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dwh/003-create_table_dim_section.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dwh/004-create_table_dim_assessment.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dwh/005-create_table_fct_payment_assessment_detail.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dwh/006-create_table_fct_flow_file.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dwh/007-create_table_fct_access.sql"
+        />
+    </changeSet>
+
+    <changeSet author="pagopa" id="init dmt schema">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dmt/001-create_schema.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dmt/002-create_view_v_assessment_classified.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dmt/003-create_view_v_flow_file_monitoring.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/dmt/004-create_view_v_access_monitoring.sql"
+        />
+    </changeSet>
+
+</databaseChangeLog>
