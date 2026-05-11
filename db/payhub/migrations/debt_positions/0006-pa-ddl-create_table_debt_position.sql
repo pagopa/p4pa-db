@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS debt_positions.debt_position (
     description text,
     status varchar(256) NOT NULL,
     organization_id bigint NOT NULL,
+    station_id varchar(256) NOT NULL,
     debt_position_type_org_id bigint NOT NULL,
     validity_date date,
     debt_position_origin varchar(256) NOT NULL,
