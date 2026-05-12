@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS classification.payments_reporting (
     acquiring_date date NOT NULL,
     bic_code_pouring_bank varchar(35),
     revision int NOT NULL default 0,
-    logically_deleted bool NOT NULL default false,
+    deleted bool NOT NULL default false,
     creation_date timestamp with time zone NOT NULL default now(),
     update_date timestamp with time zone NOT NULL default now(),
     update_operator_external_id text NOT NULL,
