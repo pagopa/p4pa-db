@@ -13,10 +13,7 @@ CREATE TABLE IF NOT EXISTS organizations.broker (
 	organization_id bigint NOT NULL,
 	broker_fiscal_code varchar(11) NOT NULL,
 	broker_name varchar(256) NOT NULL,
-	pago_pa_interaction_model varchar(25) DEFAULT 'ASYNC_GPD'::character varying NOT NULL,
 	default_station_id varchar(256),
-	station_id varchar(256),
-	broadcast_station_id varchar(256),
 	sync_payments_reporting_key bytea,
 	sync_key bytea,
 	gpd_key bytea,
@@ -31,7 +28,7 @@ CREATE TABLE IF NOT EXISTS organizations.broker (
 	update_trace_id text NOT NULL default '-',
 	constraint broker_pkey PRIMARY KEY (broker_id),
 	CONSTRAINT broker_fiscal_code_ukey UNIQUE (broker_fiscal_code),
-	CONSTRAINT station_id_ukey UNIQUE (station_id),
+	CONSTRAINT default_station_id_ukey UNIQUE (default_station_id),
 	CONSTRAINT organization_id_fkey FOREIGN KEY (organization_id) REFERENCES organizations.organization(organization_id),
 	CONSTRAINT external_id_ukey UNIQUE (external_id)
 );

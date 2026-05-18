@@ -20,7 +20,6 @@ CREATE TABLE IF NOT EXISTS organizations.organization (
 	iban varchar(35),
 	postal_iban varchar(35),
 	password bytea,
-	segregation_code varchar(2),
 	default_organization_station_id bigint,
 	cbill_inter_bank_code varchar(5),
 	org_logo text,
