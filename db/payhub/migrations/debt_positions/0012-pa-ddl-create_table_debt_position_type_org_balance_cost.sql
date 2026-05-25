@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS debt_positions.debt_position_type_org_balance_cost (
     operating_year varchar(4) NOT NULL,
     office_code varchar(64),
     office_description varchar(512),
-    section_code varchar(64),
+    section_code varchar(64) NOT NULL,
     section_description varchar(512),
     assessment_code varchar(64),
     assessment_description varchar(512),
