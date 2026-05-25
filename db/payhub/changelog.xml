@@ -50,6 +50,10 @@
                  splitStatements="false" stripComments="false"
                  path="migrations/debt_positions/0011-pa-ddl-create_table_iuv_sequence_number.sql"
         />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/debt_positions/0012-pa-ddl-create_table_debt_position_type_org_balance_cost.sql"
+        />
     </changeSet>
 
     <changeSet author="pagopa" id="init classification schema">
