@@ -54,8 +54,11 @@ CREATE INDEX IF NOT EXISTS assessments_detail_org_id_debt_position_type_org_id_i
 CREATE INDEX IF NOT EXISTS assessments_detail_organization_id_iuv_iud_idx
     ON classification.assessments_detail (organization_id, iuv, iud);
 
-CREATE UNIQUE INDEX IF NOT EXISTS assessments_detail_assessment_id_iud_idx
+CREATE INDEX IF NOT EXISTS assessments_detail_assessment_id_iud_idx
     ON classification.assessments_detail (assessment_id, iud);
+
+CREATE UNIQUE INDEX IF NOT EXISTS assessments_detail_assessment_id_iud_codes_idx
+    ON classification.assessments_detail (assessment_id, iud, office_code, section_code, assessment_code);
 
 -- final commit
 COMMIT;
