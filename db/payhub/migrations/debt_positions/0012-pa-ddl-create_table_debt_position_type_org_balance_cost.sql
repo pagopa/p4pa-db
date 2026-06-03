@@ -20,7 +20,5 @@ CREATE TABLE IF NOT EXISTS debt_positions.debt_position_type_org_balance_cost (
     CONSTRAINT debt_position_type_org_balance_cost_dptoid_fkey FOREIGN KEY (debt_position_type_org_id) REFERENCES debt_positions.debt_position_type_org(debt_position_type_org_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_debt_position_type_org_balance_cost_dptoid ON debt_positions.debt_position_type_org_balance_cost (debt_position_type_org_id);
-
 -- final commit
 COMMIT;
