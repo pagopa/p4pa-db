@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS organizations.broker (
     generate_notice_key bytea,
 	flag_delegate bool NOT NULL default false,
 	flag_payments_reporting bool NOT NULL default true,
-    iuv_system_id varchar(2) NOT NULL default '00',
+    iuv_system_id char(2) NOT NULL default '00',
 	external_id varchar(100) NOT NULL,
 	creation_date timestamp with time zone NOT NULL default now(),
 	update_date timestamp with time zone NOT NULL default now(),
