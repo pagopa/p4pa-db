@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS organizations.org_sub_unit (
     update_operator_external_id text NOT NULL,
 	update_trace_id text NOT NULL default '-',
 	constraint org_sub_unit_pkey PRIMARY KEY (organization_id, sub_unit_code),
-	CONSTRAINT org_sub_unit_org_id_fkey FOREIGN KEY (organization_id) REFERENCES organizations.organization(organization_id),
+	CONSTRAINT org_sub_unit_org_id_fkey FOREIGN KEY (organization_id) REFERENCES organizations.organization(organization_id)
 );
 
 -- final commit
