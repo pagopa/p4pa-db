@@ -124,6 +124,10 @@
                  splitStatements="false" stripComments="false"
                  path="migrations/organizations/0008-pa-ddl-create_table_organization_station.sql"
         />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0009-pa-ddl-create_table_org_sub_unit.sql"
+        />
     </changeSet>
 
     <changeSet author="pagopa" id="init process-executions schema">
