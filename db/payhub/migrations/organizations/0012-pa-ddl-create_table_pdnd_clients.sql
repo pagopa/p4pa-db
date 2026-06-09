@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS organizations.pdnd_clients (
     sub_unit_code varchar(60) NULL,
     client_name varchar(255) NOT NULL,
     kid varchar(255) NOT NULL,
-    private_key_cipher bytea NOT_NULL,
+    private_key_cipher bytea NOT NULL,
     public_key varchar(255) NOT NULL,
     creation_date timestamp with time zone NOT NULL default now(),
     update_date timestamp with time zone NOT NULL default now(),
