@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS organizations.pdnd_services (
     update_operator_external_id text NOT NULL,
 	update_trace_id text NOT NULL default '-',
     CONSTRAINT pdnd_services_pk PRIMARY KEY (purpose_id),
-    CONSTRAINT pdnd_services_ukey UNIQUE (service_type, client_id),
+    CONSTRAINT pdnd_services_ukey UNIQUE (client_id, service_type),
     CONSTRAINT pdnd_services_pdnd_clients_fkey FOREIGN KEY (client_id) REFERENCES organizations.pdnd_clients(client_id)
 );
 
