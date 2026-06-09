@@ -136,6 +136,14 @@
                  splitStatements="false" stripComments="false"
                  path="migrations/organizations/0011-pa-ddl-create_table_broker_keys.sql"
         />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0012-pa-ddl-create_table_pdnd_clients.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0013-pa-ddl-create_table_pdnd_services.sql"
+        />
     </changeSet>
 
     <changeSet author="pagopa" id="init process-executions schema">
