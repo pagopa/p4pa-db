@@ -128,6 +128,10 @@
                  splitStatements="false" stripComments="false"
                  path="migrations/organizations/0009-pa-ddl-create_table_org_sub_unit.sql"
         />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0012-pa-ddl-create_table_pdnd_services_and_pdnd_clients.sql"
+        />
     </changeSet>
 
     <changeSet author="pagopa" id="init process-executions schema">
