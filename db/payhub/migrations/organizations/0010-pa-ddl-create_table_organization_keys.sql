@@ -2,7 +2,6 @@
 BEGIN;
 
 ------------------- business logic -------------------
-
 CREATE TABLE IF NOT EXISTS organizations.organization_keys (
     organization_key_id varchar(255) NOT NULL,
     organization_id bigint NOT NULL,
