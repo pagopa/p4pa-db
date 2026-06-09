@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS organizations.organization_keys (
     constraint organization_keys_pkey PRIMARY KEY (organization_key_id),
     CONSTRAINT organization_keys_org_id_fkey FOREIGN KEY (organization_id) REFERENCES organizations.organization(organization_id),
     CONSTRAINT organization_keys_org_sub_unit_fkey FOREIGN KEY (organization_id, sub_unit_code) REFERENCES organizations.org_sub_unit(organization_id, sub_unit_code),
-    CONSTRAINT organization_keys_ukey UNIQUE (organization_id, key_type, sub_unit_cod)
+    CONSTRAINT organization_keys_ukey UNIQUE (organization_id, key_type, sub_unit_code)
 );
 
 -- final commit
