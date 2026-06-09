@@ -130,6 +130,10 @@
         />
         <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
                  splitStatements="false" stripComments="false"
+                 path="migrations/organizations/0010-pa-ddl-create_table_organization_keys.sql"
+        />
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter=";" relativeToChangelogFile="true"
+                 splitStatements="false" stripComments="false"
                  path="migrations/organizations/0011-pa-ddl-create_table_broker_keys.sql"
         />
     </changeSet>
