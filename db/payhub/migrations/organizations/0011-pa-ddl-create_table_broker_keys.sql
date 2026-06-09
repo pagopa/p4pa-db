@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS organizations.broker_keys (
     update_date timestamp with time zone NOT NULL default now(),
     update_operator_external_id text NOT NULL,
     update_trace_id text NOT NULL default '-',
-    constraint broker_keys_pkey PRIMARY KEY (broker_key_id),
+    CONSTRAINT broker_keys_pkey PRIMARY KEY (broker_key_id),
+    CONSTRAINT broker_keys_ukey UNIQUE (broker_id, key_type),
     CONSTRAINT broker_keys_broker_id_fkey FOREIGN KEY (broker_id) REFERENCES organizations.broker(broker_id)
 );
 
