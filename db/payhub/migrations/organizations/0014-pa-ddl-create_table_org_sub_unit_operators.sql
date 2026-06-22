@@ -2,6 +2,10 @@
 BEGIN;
 
 ------------------- business logic -------------------
+CREATE SEQUENCE IF NOT EXISTS organizations.org_sub_unit_operators_seq
+    AS bigint
+    START WITH 1
+    INCREMENT BY 1 ;
 
 CREATE TABLE IF NOT EXISTS organizations.org_sub_unit_operators (
     org_sub_unit_operator_id bigint NOT NULL default nextval('organizations.org_sub_unit_operators_seq'),
