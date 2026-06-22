@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS organizations.org_sub_unit_operators (
         REFERENCES organizations.org_sub_unit (organization_id, sub_unit_code)
 );
 
-CREATE INDEX IF NOT EXISTS idx_org_sub_unit_operators_org_id_ext_user_id ON organizations.org_sub_unit_operators (organization_id, operator_external_user_id);
 CREATE unique INDEX IF NOT EXISTS idx_org_sub_unit_operators_org_id_sub_code_ext_user_id ON organizations.org_sub_unit_operators (organization_id, sub_unit_code, operator_external_user_id);
 
 -- final commit
