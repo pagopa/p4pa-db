@@ -34,8 +34,7 @@ CREATE TABLE IF NOT EXISTS classification.payments_reporting (
     update_date timestamp with time zone NOT NULL default now(),
     update_operator_external_id text NOT NULL,
     update_trace_id text NOT NULL default '-',
-    CONSTRAINT payments_reporting_pkey PRIMARY KEY (payments_reporting_id),
-    CONSTRAINT payments_reporting_org_iuv_iur_idsp_uk UNIQUE (organization_id, iuv, iuf, transfer_index)
+    CONSTRAINT payments_reporting_pkey PRIMARY KEY (payments_reporting_id)
 );
 
 
