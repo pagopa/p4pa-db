@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS organizations.organization_station (
     organization_station_id bigint NOT NULL default nextval('organizations.organization_station_seq'),
     organization_id bigint NOT NULL,
     station_id varchar(256) NOT NULL,
-    segregation_code varchar(2),
+    segregation_code varchar(2) NOT NULL,
     creation_date timestamp with time zone NOT NULL default now(),
     update_date timestamp with time zone NOT NULL default now(),
     update_operator_external_id text NOT NULL,
