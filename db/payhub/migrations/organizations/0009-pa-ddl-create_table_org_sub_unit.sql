@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS organizations.org_sub_unit (
 	organization_id bigint NOT NULL,
 	sub_unit_code varchar(60) NOT NULL,
     sub_unit_type varchar(60) NOT NULL,
+    sub_unit_name varchar(256) NOT NULL,
     status varchar(256) NOT NULL,
     creation_date timestamp with time zone NOT NULL default now(),
     update_date timestamp with time zone NOT NULL default now(),
