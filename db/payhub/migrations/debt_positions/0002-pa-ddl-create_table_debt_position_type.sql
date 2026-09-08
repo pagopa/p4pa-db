@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS debt_positions.debt_position_type (
 
 CREATE INDEX IF NOT EXISTS idx_debt_position_type_broker ON debt_positions.debt_position_type (broker_id);
 
-CREATE UNIQUE INDEX IF NOT EXISTS uq_debt_position_type_broker_code ON debt_positions.debt_position_type (broker_id, code, org_type);
+CREATE UNIQUE INDEX IF NOT EXISTS uq_debt_position_type_broker_code ON debt_positions.debt_position_type (broker_id, code, org_type, taxonomy_code);
 
 INSERT INTO debt_positions.debt_position_type(debt_position_type_id, broker_id,      code, description, org_type, macro_area, service_type, collecting_reason, taxonomy_code, update_operator_external_id)
 SELECT                                                           -1,        -1, 'UNKNOWN',  'UNKNNOWN',       '',         '',           '',                '',            '',                    'SYSTEM'
