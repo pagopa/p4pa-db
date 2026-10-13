@@ -32,6 +32,6 @@ CREATE INDEX IF NOT EXISTS idx_debt_position_org_id ON debt_positions.debt_posit
 CREATE INDEX IF NOT EXISTS idx_debt_position_status ON debt_positions.debt_position (status);
 CREATE INDEX IF NOT EXISTS idx_debt_position_debt_type_org_id ON debt_positions.debt_position (debt_position_type_org_id);
 CREATE INDEX IF NOT EXISTS idx_debt_position_iupd_org_id ON debt_positions.debt_position (iupd_org, organization_id);
-
+CREATE INDEX IF NOT EXISTS idx_debt_position_org_id_flag_pu_pago_pa_payment ON debt_positions.debt_position (organization_id, flag_pu_pago_pa_payment) WHERE flag_pu_pago_pa_payment = false;
 -- final commit
 COMMIT;
