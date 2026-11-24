@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS debt_positions.receipt (
     debtor_entity_type character(1) NOT NULL,
     personal_data_id bigint NOT NULL,
     debtor_fiscal_code_hash bytea NOT NULL,
+    metadata jsonb,
     creation_date timestamp with time zone NOT NULL default now(),
     update_date timestamp with time zone NOT NULL default now(),
     update_operator_external_id text NOT NULL,
